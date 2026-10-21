@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Global Digital Clock</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="clock-app">
+      <header class="app-header">
+        <p class="eyebrow">World Time</p>
+        <h1>Digital Clock</h1>
+      </header>
+
+      <section class="clock-grid" aria-live="polite">
+        <article class="clock-card" data-timezone="UTC">
+          <div class="timezone-row">
+            <span class="timezone-label">UTC</span>
+            <span class="timezone-abbr">Coordinated Universal Time</span>
+          </div>
+          <div class="time" id="UTC">--:--:--</div>
+          <div class="date" id="UTC-date">-</div>
+        </article>
+
+        <article class="clock-card" data-timezone="America/New_York">
+          <div class="timezone-row">
+            <span class="timezone-label">New York</span>
+            <span class="timezone-abbr">EST / EDT</span>
+          </div>
+          <div class="time" id="America/New_York">--:--:--</div>
+          <div class="date" id="America/New_York-date">-</div>
+        </article>
+
+        <article class="clock-card" data-timezone="Europe/London">
+          <div class="timezone-row">
+            <span class="timezone-label">London</span>
+            <span class="timezone-abbr">GMT / BST</span>
+          </div>
+          <div class="time" id="Europe/London">--:--:--</div>
+          <div class="date" id="Europe/London-date">-</div>
+        </article>
+
+        <article class="clock-card" data-timezone="Asia/Tokyo">
+          <div class="timezone-row">
+            <span class="timezone-label">Tokyo</span>
+            <span class="timezone-abbr">JST</span>
+          </div>
+          <div class="time" id="Asia/Tokyo">--:--:--</div>
+          <div class="date" id="Asia/Tokyo-date">-</div>
+        </article>
+
+        <article class="clock-card" data-timezone="Asia/Dubai">
+          <div class="timezone-row">
+            <span class="timezone-label">Dubai</span>
+            <span class="timezone-abbr">GST</span>
+          </div>
+          <div class="time" id="Asia/Dubai">--:--:--</div>
+          <div class="date" id="Asia/Dubai-date">-</div>
+        </article>
+
+        <article class="clock-card" data-timezone="Australia/Sydney">
+          <div class="timezone-row">
+            <span class="timezone-label">Sydney</span>
+            <span class="timezone-abbr">AEST</span>
+          </div>
+          <div class="time" id="Australia/Sydney">--:--:--</div>
+          <div class="date" id="Australia/Sydney-date">-</div>
+        </article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
